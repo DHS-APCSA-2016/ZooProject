@@ -5,11 +5,13 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class AnimalTester extends Dog
+public class AnimalTester
 {
     public static void main(String[] args) 
     {
         Animal b = new CircusBear();
         b.interact();
+        Animal d = new Husky();
+        d.interact();
     }
 }
