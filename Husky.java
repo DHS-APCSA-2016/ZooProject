@@ -2,26 +2,32 @@
 /**
  * Write a description of class Husky here.
  * 
- * @author Ana Vukojevic P.03 
- * @version 1.0
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public class Husky extends Dog
 {
     // instance variables - replace the example below with your own
+    private String toy;
 
-    /**
-     * Constructor for objects of class Husky
-     */
     public Husky()
     {
-        super("Husky", "This husky enjoys running around and \n" +
-                        "playing with toys");
+        super("Husky", "This is a retired husky that rides its \n" +
+            "tricycle all day long.");
+        this.toy = "A frisbee";
+    }
+
+    public Husky(String species,String desc)
+    {
+        super(species, desc);
+        toy = "frisbee";
     }
 
     @Override
     public String interact()
     {
         System.out.println(super.eat());
-        return "The husky barks happily at you";
+        return "The husky looks at you forlornly.";
     }
+
 }

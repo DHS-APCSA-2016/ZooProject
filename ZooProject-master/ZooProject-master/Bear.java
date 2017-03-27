@@ -1,7 +1,7 @@
 //by extending Animal, Bear receives
 //every instance variable & method 
 //that Animal has
-public class Bear extends Animal implements Fly, Walk, Swim
+public class Bear extends Animal implements Fly, Walk
 {
     private String toy;
     public Bear()
@@ -51,10 +51,5 @@ public class Bear extends Animal implements Fly, Walk, Swim
     public String walk() 
     {
         return "The bear dances a little jig.";
-    }
-    
-    public String swim()
-    {
-        return "The water is too cold for me.";
     }
 }
