@@ -2,10 +2,10 @@
 /**
  * Write a description of class Dog here.
  * 
- * @author Ana Vukojevic P.03
- * @version 1.0
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Dog extends Animal implements Walk, Swim
+public class Dog extends Animal implements Fly, Walk, Swim
 {
     // instance variables - replace the example below with your own
     private String toy;
@@ -16,37 +16,44 @@ public class Dog extends Animal implements Walk, Swim
     public Dog()
     {
         // initialise instance variables
-        super("Dog", "This is just an average dog.");
-        this.toy = "A bone";
+        super("Dog", "This is just your average dog.");
+        this.toy = "A Warriors' basketball";
     }
 
     public Dog(String species, String desc)
     {
         super(species, desc);
-        toy = "bone";
+        toy = "Warrors' basketball";
     }
-    
-    public String interact()
+
+    public String interact() 
     {
-        return "The dog licks your hand and barks happily";
+        return "GGRRRRRR, do not touch my " + toy;
     }
-    
-    public String makeNoise()
+
+    public String makeNoise() 
     {
-        return "WOOF";
+        return "GGGGGGRRRRR";
     }
+
     public String eat() 
     {
-        return "WOOF WOOF!";
+        return "BBBBBAAAAAARRRRKKKKK THIS IS DELICIOUS!";
     }
-    
-    public String walk()
+
+    public String fly()
     {
-        return "The dog runs around the backyard, chasing his tail";
+        return "The dog slaps on its jetpack and flies away\n" +
+        "while a legendary figure rises in the background.";
     }
-    
+
+    public String walk() 
+    {
+        return "The dog break dances to contemporary beats.";
+    }
+
     public String swim()
     {
-        return "The dog jumps in the pool and swims around";
+        return "The water is cold.";
     }
 }
