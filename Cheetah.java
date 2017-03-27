@@ -1,55 +1,55 @@
 
 /**
- * Creeates a Cheetah object and shows what you can do with it
+ * Write a description of class Cheetah here.
  * 
- * @author Ishaque Khan
- * @period Period 3
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Cheetah extends Animal
+public class Cheetah extends Animal implements Fly, Walk, Swim
 {
-    private int speed;
-    private int weight;
-    private int age;
-    private String gender;
-    private int height;
-    private String color;
-    private String name;
-    
-    public Cheetah(String desc, String species){
-        super(desc, species);
-        this.speed = 0;
-        this.weight = 0;
-        this.age = 0;
-        this.gender = "";
-        this.height = 0;
-        this.color = "";
-        this.name = "";
+    private String toy;
+    public Cheetah()
+    {
+        super("Cheetah", "FAST AS LIGHTNING");
+        
+        this.toy = "70mph of the african savannah";
     }
     
-    public Cheetah(int speed, int weight, int age, String gender, int height, String color, String name, String desc, String species){
-        super(desc, species);
-        this.speed = speed;
-        this.weight = weight;
-        this.age = age;
-        this.gender = gender;
-        this.height = height;
-        this.color = color;
-        this.name = name;
+    
+    public Cheetah(String species, String desc)
+    {
+        super(species, desc);
+        toy = "Gazelle Meat";
     }
     
-    public String getName(){
-        return name;
+    public String interact() 
+    {
+        return "AYYY, do not touch my " + toy;
+    }
+    public String makeNoise() 
+    {
+        return "MEOW!!!!!";
+    }
+    public String eat() 
+    {
+        return "AYYY THIS IS DELICIOUS!";
     }
     
-    public String eat(){
-        return getName() + " pounced on you and ate you";
+    public String fly()
+    {
+        return "Use your head....Cheetahs can't fly ";
     }
     
-    public String interact(){
-        return "Do not interact with me or I will eat you.";
+    public String walk() 
+    {
+        return "The Cheetah dances a tango to show its predatorial dominance.";
     }
-    
-    public String makeNoise(){
-        return "ROOOOOOOOOOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAR";
+    public String swim()
+    { 
+        return "There is no water in the savannah. Thus I cannot swim";
+    }
+    public String run()
+    {
+        return "At 70 mph, I am the fastest land mammal on earth";
     }
 }
