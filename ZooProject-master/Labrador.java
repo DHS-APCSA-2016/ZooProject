@@ -9,14 +9,14 @@ public class Labrador extends Dog
 {
     public Labrador()
     {
-        super("Retreverus Laboradorus", "This is a fat dog that \n" +
-                                        "eats all day.");
+        super("Retreverus Laboradorus", "This dog is \n" +
+                                        "voting for Brian.");
     }
     
     @Override
     public String interact()
     {
         System.out.println(super.swim());
-        return "The dog sinks because it is too fat.";
+        return "The dog succeeeds at life because it votes for Brian.";
     }
 }
