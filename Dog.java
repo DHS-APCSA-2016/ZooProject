@@ -2,10 +2,10 @@
 /**
  * Write a description of class Dog here.
  * 
- * @Jenny Li (your name) 
- * @version (a version number or a date)
+ * @author Shiroman Singh
+ * @version Version 1.2
  */
-public class Dog extends Animal implements Walk
+public class Dog extends Animal implements Fly, Walk, Swim
 {
     // instance variables - replace the example below with your own
     private String toy;
@@ -15,52 +15,45 @@ public class Dog extends Animal implements Walk
      */
     public Dog()
     {
-        //super() is implicitly called if no other
-        //super call is explicitly called.
-        //MUST BE THE FIRST LINE IN THE CONSTRUCTORS
+        // initialise instance variables
         super("Dog", "This is just your average dog.");
-        //calls the superclass's constructor
-        
-        //this.species = species;  //these don't work
-        //this.desc = desc;        //because we don't have access
-                                   //to private members of
-                                   //the superclass
-        //Toy that default dog have
-        this.toy = "A Squeeky ball' Frisbee";
+        this.toy = "A Warriors' basketball";
     }
-    
-    //Pass-through constructor: it receives a species 
-    // & description as parameters and just passes 
-    // them straight up to the superclass to take care of
+
     public Dog(String species, String desc)
     {
         super(species, desc);
-        toy = "ball";
+        toy = "Warrors' basketball";
     }
-    
+
     public String interact() 
     {
-        return "Ruf Ruf, do not touch my " + toy;
+        return "GGRRRRRR, do not touch my " + toy;
     }
+
     public String makeNoise() 
     {
-        return "Rufff";
+        return "GGGGGGRRRRR";
     }
+
     public String eat() 
     {
-        return "*sniff sniff* THIS IS DELICIOUS!";
+        return "BBBBBAAAAAARRRRKKKKK THIS IS DELICIOUS!";
     }
-    
+
     public String fly()
     {
         return "The dog slaps on its jetpack and flies away\n" +
-                "while Iron Man plays in the background.";
-    }
-    
-    public String walk() 
-    {
-        return "The dog dances a little jig.";
-    }
+        "while a legendary figure rises in the background.";
     }
 
-    
+    public String walk() 
+    {
+        return "The dog break dances to contemporary beats.";
+    }
+
+    public String swim()
+    {
+        return "The water is cold.";
+    }
+}
