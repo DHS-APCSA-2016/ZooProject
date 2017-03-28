@@ -2,8 +2,8 @@
 /**
  * Write a description of class Husky2 here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Justin Symmank 
+ * @version 3/27/17
  */
 public class Husky2 extends Dog
 {
