@@ -2,8 +2,8 @@
 /**
  * Write a description of class MadagascarHissingCockroach here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Pranav Konduru Period: 4
+ * @version 3/26/2017
  */
 public class MadagascarHissingCockroach extends Cockroach
 {
