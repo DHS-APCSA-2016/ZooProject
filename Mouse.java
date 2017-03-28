@@ -1,11 +1,11 @@
 
 /**
- * Write a description of class Mouse here.
+ * This Mouse class contains a creature called mouse. When interacted with the mouse it, it can fly and walk.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Japheth Wun 
+ * @version (3/28/17)
  */
-public class Mouse extends Animal
+public class Mouse extends Animal implements Fly, Walk
 {
     private String toy;
     public Mouse()

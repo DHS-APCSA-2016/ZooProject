@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Pikachu here.
+ * The class Pikachu is a mouse and extends the mouse class. When interacted with the Pikachu, it will reply to you in a manner tone
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Japheth Wun 
+ * @version 3/28/17
  */
 public class Pikachu extends Mouse
 {
